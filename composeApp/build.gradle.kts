@@ -42,6 +42,10 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+
+            implementation(libs.haze)
+            implementation(libs.haze.materials)
+            implementation(libs.androidx.material.icons.extended)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -81,6 +85,9 @@ android {
 }
 
 dependencies {
+    implementation(libs.haze)
+    implementation(libs.haze.materials)
+    implementation(libs.androidx.material.icons.extended)
     debugImplementation(compose.uiTooling)
 }
 
